@@ -7,9 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 const NewArrival = () => {
 
+  // const next = () =>{
+  //   Slider.slickNext()
+  // }
+  // const previous = () =>{
+  //   Slider.slickPrev()
+  // }
+
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     autoplay:true,
     autoplaySpeed:3000,
@@ -51,12 +58,14 @@ const NewArrival = () => {
         <div className='section-title text-center mb-55'>
           <h2>
             New Arrival
+            {/* <a href="" className='btn btn-sm ml-2 site-btn m-2' onClick={previous}><i className="fa fa-angle-left"></i></a>
+            <a href="" className='btn btn-sm ml-2 site-btn' onClick={next}><i className="fa fa-angle-right"></i></a> */}
           </h2>
           <p>Some Of Our Exclusive Collection, You May Like</p>
         </div>
 
         <Row>
-        <Slider {...settings}>
+        <Slider  {...settings}>
           <div>
           <Card className="image-box card">
               <img className="center" src='https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849904-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDU4OHxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDI1Lzk4MzQxMDkyMDY1NTguanBnfGU1NGNkMTA3ODhiYTJhZGEyNDFhMGEzZDZhNjg5NzhmZWYzM2JkNDY4NjY3MzhiZTA3MzRmM2U4OGUzMmU4Y2Q' />   
